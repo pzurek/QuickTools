@@ -103,7 +103,7 @@ namespace QuickTools
                 {
                     TaskDialog selectAllDialog = new TaskDialog("Select all?");
                     selectAllDialog.CommonButtons = TaskDialogCommonButtons.Yes | TaskDialogCommonButtons.No;
-                    selectAllDialog.MainInstruction = "No elements have been selected. Do you want to select all text element in the project?";
+                    selectAllDialog.MainInstruction = "No elements have been selected. Do you want to select all text elements in the project?";
                     selectAllDialog.MainContent = string.Format("Press YES if you want to change all text elements in the project to {0} case or press NO if you want to cancel.", textCase);
 
                     if (selectAllDialog.Show() == TaskDialogResult.Yes)
