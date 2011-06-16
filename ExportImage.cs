@@ -25,21 +25,15 @@ namespace QuickTools
     [Regeneration(RegenerationOption.Manual)]
     public class ExportImage : IExternalCommand
     {
-        UIApplication uiApp;
-        UIDocument uiDoc;
-        Application app;
-        Document doc;
-
         public Result Execute(ExternalCommandData commandData,
                               ref string message,
                               ElementSet elements)
         {
             try
             {
-                uiApp = commandData.Application;
-                uiDoc = uiApp.ActiveUIDocument;
-                app = uiApp.Application;
-                doc = uiDoc.Document;
+                UIApplication uiApp = commandData.Application;
+                UIDocument uiDoc = uiApp.ActiveUIDocument;
+                Document doc = uiDoc.Document;
 
                 SaveFileDialog saveFileDialog = new SaveFileDialog();
                 saveFileDialog.Title = "Save view as file";
