@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<RevitAddIns>
+  <AddIn Type="Command">
+    <Assembly>C:\ProgramData\Autodesk\Revit\Addins\2012\QuickTools.dll</Assembly>
+    <AddInId>DC8728CF-3CD7-4429-9F14-A900A36E2FE4</AddInId>
+    <FullClassName>QuickTools.HideCropBoxes</FullClassName>
+    <Text>Hide All Crop Boxes</Text>
+    <VisibilityMode>NotVisibleInFamily</VisibilityMode>
+    <LongDescription>
+      Hide all crop boxes in the whole project.
+    </LongDescription>
+    <TooltipImage></TooltipImage>
+    <LargeImage></LargeImage>
+    <VendorId>CPSR</VendorId>
+    <VendorDescription>CADPRO Systems ltd, www.cadpro.co.nz</VendorDescription>
+  </AddIn>
+  <AddIn Type="Command">
+    <Assembly>C:\ProgramData\Autodesk\Revit\Addins\2012\QuickTools.dll</Assembly>
+    <AddInId>92E5113D-A7D1-4366-89B9-9E2FB45B72B5</AddInId>
+    <FullClassName>QuickTools.ShowCropBoxes</FullClassName>
+    <Text>Show All Crop Boxes</Text>
+    <VisibilityMode>NotVisibleInFamily</VisibilityMode>
+    <LongDescription>
+      Show all crop boxes in the whole project.
+    </LongDescription>
+    <TooltipImage></TooltipImage>
+    <LargeImage></LargeImage>
+    <VendorId>CPSR</VendorId>
+    <VendorDescription>CADPRO Systems ltd, www.cadpro.co.nz</VendorDescription>
+  </AddIn>
+  <AddIn Type="Command">
+    <Assembly>C:\ProgramData\Autodesk\Revit\Addins\2012\QuickTools.dll</Assembly>
+    <AddInId>7608B433-1698-418c-8DF7-886DECBD56E2</AddInId>
+    <FullClassName>QuickTools.ExportImage</FullClassName>
+    <Text>Export Image</Text>
+    <VisibilityMode>NotVisibleInFamily</VisibilityMode>
+    <LongDescription>
+      Export current view to a png file.
+    </LongDescription>
+    <TooltipImage></TooltipImage>
+    <LargeImage></LargeImage>
+    <VendorId>CPSR</VendorId>
+    <VendorDescription>CADPRO Systems ltd, www.cadpro.co.nz</VendorDescription>
+  </AddIn>
+  <AddIn Type="Command">
+    <Assembly>C:\ProgramData\Autodesk\Revit\Addins\2012\QuickTools.dll</Assembly>
+    <AddInId>1F351A4E-16BC-47b3-92AE-92B941872E9D</AddInId>
+    <FullClassName>QuickTools.UpperCaseText</FullClassName>
+    <Text>Upper Case Text</Text>
+    <VisibilityMode>NotVisibleInFamily</VisibilityMode>
+    <LongDescription>
+     Format text to upper case.
+    </LongDescription>
+    <TooltipImage></TooltipImage>
+    <LargeImage></LargeImage>
+    <VendorId>CPSR</VendorId>
+    <VendorDescription>CADPRO Systems ltd, www.cadpro.co.nz</VendorDescription>
+  </AddIn>
+  <AddIn Type="Command">
+    <Assembly>C:\ProgramData\Autodesk\Revit\Addins\2012\QuickTools.dll</Assembly>
+    <AddInId>CB811F8A-4B32-41bb-AB25-2755BD55913B</AddInId>
+    <FullClassName>QuickTools.LowerCaseText</FullClassName>
+    <Text>Lower Case Text</Text>
+    <VisibilityMode>NotVisibleInFamily</VisibilityMode>
+    <LongDescription>
+      Format text to lower case.
+    </LongDescription>
+    <TooltipImage></TooltipImage>
+    <LargeImage></LargeImage>
+    <VendorId>CPSR</VendorId>
+    <VendorDescription>CADPRO Systems ltd, www.cadpro.co.nz</VendorDescription>
+  </AddIn>
+  <AddIn Type="Command">
+    <Assembly>C:\ProgramData\Autodesk\Revit\Addins\2012\QuickTools.dll</Assembly>
+    <AddInId>4B97566D-D564-44bf-813D-14933C5AF5A4</AddInId>
+    <FullClassName>QuickTools.TitleCaseText</FullClassName>
+    <Text>Title Case Text</Text>
+    <VisibilityMode>NotVisibleInFamily</VisibilityMode>
+    <LongDescription>
+      Format text to title case (First letter of every word capital).
+    </LongDescription>
+    <TooltipImage></TooltipImage>
+    <LargeImage></LargeImage>
+    <VendorId>CPSR</VendorId>
+    <VendorDescription>CADPRO Systems ltd, www.cadpro.co.nz</VendorDescription>
+  </AddIn>
+  <AddIn Type="Command">
+    <Assembly>C:\ProgramData\Autodesk\Revit\Addins\2012\QuickTools.dll</Assembly>
+    <AddInId>84E126F0-FABC-4b5d-98E2-3A3B88AB6836</AddInId>
+    <FullClassName>QuickTools.SentenceCaseText</FullClassName>
+    <Text>Sentence Case Text</Text>
+    <VisibilityMode>NotVisibleInFamily</VisibilityMode>
+    <LongDescription>
+      Format text to title case (First letter of every sentence capital).
+    </LongDescription>
+    <TooltipImage></TooltipImage>
+    <LargeImage></LargeImage>
+    <VendorId>CPSR</VendorId>
+    <VendorDescription>CADPRO Systems ltd, www.cadpro.co.nz</VendorDescription>
+  </AddIn>
+  <AddIn Type="Command">
+    <Assembly>C:\ProgramData\Autodesk\Revit\Addins\2012\QuickTools.dll</Assembly>
+    <AddInId>eee8a581-d93b-40d9-8209-e9b0d53bb48c</AddInId>
+    <FullClassName>QuickTools.QuickWipe</FullClassName>
+    <Text>Quick Wipe</Text>
+    <VisibilityMode>NotVisibleInFamily</VisibilityMode>
+    <LongDescription>
+      Delete all unnecessary views, legends, schedules and sheets.
+    </LongDescription>
+    <TooltipImage></TooltipImage>
+    <LargeImage></LargeImage>
+    <VendorId>CPSR</VendorId>
+    <VendorDescription>CADPRO Systems ltd, www.cadpro.co.nz</VendorDescription>
+  </AddIn>
+</RevitAddIns>
