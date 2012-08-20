@@ -57,11 +57,11 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="RevitAPI">
-      <HintPath>C:\Program Files\Autodesk\Revit Structure 2012\Program\RevitAPI.dll</HintPath>
+      <HintPath>C:\Program Files\Autodesk\Revit 2013\Program\RevitAPI.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="RevitAPIUI">
-      <HintPath>C:\Program Files\Autodesk\Revit Structure 2012\Program\RevitAPIUI.dll</HintPath>
+      <HintPath>C:\Program Files\Autodesk\Revit 2013\Program\RevitAPIUI.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="System" />
@@ -103,13 +103,14 @@
       <SubType>Designer</SubType>
     </Content>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="AfterClean">
     <Delete Files="$(AppData)\Autodesk\REVIT\Addins\2011\RevItUp.addin" />
   </Target>
   <PropertyGroup>
-    <PostBuildEvent>copy $(TargetDir)\QuickTools.addin "C:\ProgramData\Autodesk\Revit\Addins\2012\QuickTools.addin"
-copy $(TargetDir)\QuickTools.dll "C:\ProgramData\Autodesk\Revit\Addins\2012\QuickTools.dll"
+    <PostBuildEvent>copy $(TargetDir)\QuickTools.addin "C:\ProgramData\Autodesk\Revit\Addins\2013\QuickTools.addin"
+copy $(TargetDir)\QuickTools.dll "C:\ProgramData\Autodesk\Revit\Addins\2013\QuickTools.dll"
 </PostBuildEvent>
   </PropertyGroup>
 </Project>
