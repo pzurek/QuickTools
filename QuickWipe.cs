@@ -61,7 +61,7 @@ namespace QuickTools
                 }
                 catch (Exception e)
                 {
-                    TaskDialog.Show("Problem during deletion", string.Format("Object {1} no.{0} could not be deleted",
+                    TaskDialog.Show("Problem during deletion", String.Format("Object {1} no.{0} could not be deleted",
                         counter.ToString(),
                         e.Source.ToString()));
                 }
