@@ -49,7 +49,7 @@
     <Text>Upper Case Text</Text>
     <VisibilityMode>NotVisibleInFamily</VisibilityMode>
     <LongDescription>
-     Format text to upper case.
+      Format text to upper case.
     </LongDescription>
     <TooltipImage></TooltipImage>
     <LargeImage></LargeImage>
