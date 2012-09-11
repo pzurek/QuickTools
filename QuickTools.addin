@@ -112,4 +112,18 @@
     <VendorId>CPSR</VendorId>
     <VendorDescription>CADPRO Systems ltd, www.cadpro.co.nz</VendorDescription>
   </AddIn>
+  <AddIn Type="Command">
+    <Assembly>C:\ProgramData\Autodesk\Revit\Addins\2013\QuickTools.dll</Assembly>
+    <AddInId>3E2AC463-6B46-4164-A00D-82DBD4E33E39</AddInId>
+    <FullClassName>QuickTools.PurgeUnnamedRefPlanes</FullClassName>
+    <Text>Purge Unnamed RefPlanes</Text>
+    <VisibilityMode>NotVisibleInFamily</VisibilityMode>
+    <LongDescription>
+      Delete all unnamed reference planes.
+    </LongDescription>
+    <TooltipImage></TooltipImage>
+    <LargeImage></LargeImage>
+    <VendorId>CPSR</VendorId>
+    <VendorDescription>CADPRO Systems ltd, www.cadpro.co.nz</VendorDescription>
+  </AddIn>
 </RevitAddIns>
