@@ -15,16 +15,32 @@
   <body>
     <div class="wrapper">
       <header>
-        <h1>Quicktools</h1>
-        <p>A set of small and easy to use tools for Autodesk Revit</p>
+        <h1>QuickTools</h1>
+        <p>
+          A set of quick and very simple tools for Autodesk Revit.
+          They are meant to be useful for regular Revit users,
+          but for us are a way of exploring the Revit API
+          and learning how Revit plugins may used to improve users' workflow.
+        </p>
+        <p><strong>
+          Please, report all the issues and register feature requests <a href="https://github.com/pzurek/QuickTools/issues">here</a>.
+        </strong></p>
+        <br/>
         <p class="view"><a href="https://github.com/pzurek/QuickTools">View the Project on GitHub <small>pzurek/QuickTools</small></a></p>
         <ul>
           <li><a href="https://github.com/pzurek/QuickTools/zipball/master">Download <strong>ZIP File</strong></a></li>
           <li><a href="https://github.com/pzurek/QuickTools/tarball/master">Download <strong>TAR Ball</strong></a></li>
           <li><a href="https://github.com/pzurek/QuickTools">View On <strong>GitHub</strong></a></li>
         </ul>
+        <p class="cadpro"><strong>Developed for and released by:</strong>
+            <a href="http://www.cadpro.co.nz">
+                <img src="http://www.cadpro.co.nz/MasterPages/img/cadproLogo.gif" href="http://www.cadpro.co.nz"/>
+                <img src="http://www.cadpro.co.nz/MasterPages/img/autodeskLogo.gif" href="http://www.cadpro.co.nz"/>
+            </a>
+        </p>
       </header>
       <section>
+        <h2>Following tools are included:</h2>
         <h3>Text case tools</h3>
         Allows to change the text case in all selected text elements simultaneously. If no text elements are selected, the change will be applied to ALL text elements in the project. Available commands are:
         <ul>
@@ -44,15 +60,18 @@
         <h3>Quick wipe</h3>
         This command deletes all views, scheats and schedules except for the default {3D} view.
         To use the command, you should first activate the default {3D} view and "Close Hidden" views.
-        <h3>Purge unnamed RefPlanes</h3>
+        <h3>Purge Unnamed RefPlanes</h3>
         Deletes all unnamed reference planes in the project.
-        <h3>Installation</h3>
-        On Windows 7:
-        Copy QuickTools.dll and QuickTools.addin into the following folder:
-        C:\ProgramData\Autodesk\Revit\Addins\2013
-        <br/>
-        Restart Revit. Add-Ins tab should be available in the ribbon.
-        The External Tools dropdown menu will have 8 new commands.
+        <div class="install">
+          <h3>Installation</h3>
+          <p><strong>On Windows 7:</strong><br/>
+          Copy QuickTools.dll and QuickTools.addin into the following folder:
+          <br/>
+          <em>C:\ProgramData\Autodesk\Revit\Addins\2013</em>
+          <br/>
+          Restart Revit. Add-Ins tab should be available in the ribbon.
+          The External Tools dropdown menu will have 8 new commands.</p>
+        </div>
       </section>
       <footer>
         <p>This project is maintained by <a href="https://github.com/pzurek">pzurek</a></p>
