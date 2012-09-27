@@ -49,7 +49,7 @@ namespace QuickTools
 
                 foreach (Element refPlane in refPlanes)
                 {
-                    if (string.IsNullOrEmpty(refPlane.Name))
+                    if (refPlane.Name == "Reference Plane")
                         doc.Delete(refPlane);
                 }
 
