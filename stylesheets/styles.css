@@ -84,6 +84,16 @@ pre {
   overflow-x: auto;
 }
 
+.screenshot {
+  	text-align: center;
+    margin-top: 20px;
+}
+
+.screenshot::after {
+	content: ".";
+    visibility: hidden;
+}
+
 table {
   width:100%;
   border-collapse:collapse;
