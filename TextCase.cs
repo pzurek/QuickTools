@@ -1,12 +1,9 @@
-﻿#region Imported Namespaces
-
-//.NET common used namespaces
+#region Imported Namespaces
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Globalization;
 
-//Revit.NET common used namespaces
 using Autodesk.Revit.ApplicationServices;
 using Autodesk.Revit.Attributes;
 using Autodesk.Revit.DB;
