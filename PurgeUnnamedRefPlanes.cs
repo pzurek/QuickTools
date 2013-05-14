@@ -3,19 +3,13 @@
 //.NET common used namespaces
 using System;
 using System.Collections.Generic;
-using System.Windows.Forms;
 
 //Revit.NET common used namespaces
-using Autodesk.Revit.ApplicationServices;
 using Autodesk.Revit.Attributes;
 using Autodesk.Revit.DB;
 using Autodesk.Revit.UI;
-using Autodesk.Revit.UI.Selection;
 
-using View = Autodesk.Revit.DB.View;
 using Application = Autodesk.Revit.ApplicationServices.Application;
-
-using QuickTools;
 
 #endregion
 
@@ -44,16 +38,29 @@ namespace QuickTools
                 FilteredElementCollector refPlaneCollector = new FilteredElementCollector(doc);
                 IList<Element> refPlanes = refPlaneCollector.OfClass(typeof(ReferencePlane)).ToElements();
 
+                ElementId nameParamterId = new ElementId(BuiltInParameter.DATUM_TEXT);
+                ParameterValueProvider pvp = new ParameterValueProvider(nameParamterId);
+                FilterStringRuleEvaluator evaluator = new FilterStringEquals();
+
+                FilterRule rule = new FilterStringRule(pvp, evaluator, "", false);
+                ElementFilter filter = new ElementParameterFilter(rule);
+
+                FilteredElementCollector unnamedRefPlaneCollector = new FilteredElementCollector(doc);
+                unnamedRefPlaneCollector.OfClass(typeof(ReferencePlane));
+                unnamedRefPlaneCollector.WherePasses(filter);
+                IList<Element> unnamedRefPlanes = unnamedRefPlaneCollector.ToElements();
+
                 Transaction transaction = new Transaction(doc);
                 transaction.Start("Purging unnamed reference planes");
 
-                foreach (Element refPlane in refPlanes)
-                {
-                    if (refPlane.Name == "Reference Plane")
-                        doc.Delete(refPlane);
-                }
-
+                foreach (Element refPlane in unnamedRefPlanes)
+                     doc.Delete(refPlane.Id);
+ 
                 transaction.Commit();
+
+                TaskDialog.Show("Purge Unnamed Ref Planes",
+                                String.Format("{0} reference planes were found in the project.\n{1} unnamed reference planes were deleted.",
+                                               refPlanes.Count.ToString(), unnamedRefPlanes.Count.ToString()));
 
                 return Result.Succeeded;
             }
