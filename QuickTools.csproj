@@ -57,11 +57,11 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="RevitAPI">
-      <HintPath>C:\Program Files\Autodesk\Revit 2013\Program\RevitAPI.dll</HintPath>
+      <HintPath>C:\Program Files\Autodesk\Revit Structure 2014\RevitAPI.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="RevitAPIUI">
-      <HintPath>C:\Program Files\Autodesk\Revit 2013\Program\RevitAPIUI.dll</HintPath>
+      <HintPath>C:\Program Files\Autodesk\Revit Structure 2014\RevitAPIUI.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="System" />
@@ -110,8 +110,8 @@
     <Delete Files="$(AppData)\Autodesk\REVIT\Addins\2011\RevItUp.addin" />
   </Target>
   <PropertyGroup>
-    <PostBuildEvent>copy $(TargetDir)\QuickTools.addin "C:\ProgramData\Autodesk\Revit\Addins\2013\QuickTools.addin"
-copy $(TargetDir)\QuickTools.dll "C:\ProgramData\Autodesk\Revit\Addins\2013\QuickTools.dll"
+    <PostBuildEvent>copy $(TargetDir)\QuickTools.addin "C:\ProgramData\Autodesk\Revit\Addins\2014\QuickTools.addin"
+copy $(TargetDir)\QuickTools.dll "C:\ProgramData\Autodesk\Revit\Addins\2014\QuickTools.dll"
 </PostBuildEvent>
   </PropertyGroup>
 </Project>
