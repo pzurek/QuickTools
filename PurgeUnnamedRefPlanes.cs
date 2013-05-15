@@ -41,7 +41,6 @@ namespace QuickTools
                 ElementId nameParamterId = new ElementId(BuiltInParameter.DATUM_TEXT);
                 ParameterValueProvider pvp = new ParameterValueProvider(nameParamterId);
                 FilterStringRuleEvaluator evaluator = new FilterStringEquals();
-
                 FilterRule rule = new FilterStringRule(pvp, evaluator, "", false);
                 ElementFilter filter = new ElementParameterFilter(rule);
 
@@ -59,7 +58,7 @@ namespace QuickTools
                 transaction.Commit();
 
                 TaskDialog.Show("Purge Unnamed Ref Planes",
-                                String.Format("{0} reference planes were found in the project.\n{1} unnamed reference planes were deleted.",
+                                String.Format("{0} reference planes were found.\n{1} unnamed reference planes were deleted.",
                                                refPlanes.Count.ToString(), unnamedRefPlanes.Count.ToString()));
 
                 return Result.Succeeded;
