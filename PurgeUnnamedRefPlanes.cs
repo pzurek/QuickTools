@@ -58,7 +58,7 @@ namespace QuickTools
                 transaction.Commit();
 
                 TaskDialog.Show("Purge Unnamed Ref Planes",
-                                String.Format("{0} reference planes were found.\n{1} unnamed reference planes were deleted.",
+                                String.Format("{0} reference planes found.\n{1} unnamed reference planes deleted.",
                                                refPlanes.Count.ToString(), unnamedRefPlanes.Count.ToString()));
 
                 return Result.Succeeded;
